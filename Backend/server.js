@@ -18,5 +18,5 @@ app.use("/job", Job)
 
 app.listen(PORT, async () => {
     await mongoose.connect(mongo_url)
-    console.log('server started on port 8080')
+    console.log(`server started on port ${PORT}`)
 })
