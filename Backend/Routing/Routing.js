@@ -7,6 +7,17 @@ app.get("/", async(req, res) => {
     res.send(data)
 })
 
+app.get("/:id", async (req, res) => { 
+    const { id } = req.params
+    // console.log(language)
+    try {
+        const data=await Job.find({language: id})
+        // console.log(data)
+        res.send(data)
+    } catch (err) {
+        console.log(err)
+    }
+})
 app.post("/", async(req, res) => {
     const { company, postedAt, city,role,level,contract,position,language } = req.body;
     try {
