@@ -2,6 +2,7 @@ const express = require('express');
 const Job = require("../Model/Job.model")
 const app = express.Router()
 
+// console.log(Job)
 /// -----------------------Get all--------------------------------
 
 app.get("/", async(req, res) => {

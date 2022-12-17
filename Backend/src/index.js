@@ -16,6 +16,8 @@ app.get('/', (req, res) => res.send('hello User'))
 
 app.use("/job", Job)
 
+mongoose.set('strictQuery', false);
+
 app.listen(PORT, async () => {
     await mongoose.connect(mongo_url)
     console.log(`server started on port ${PORT}`)
