@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 9000;
 const mongo_url=process.env.mongo_url||""
 
 
-app.get('/', (req, res) => res.send('hello'))
+app.get('/', (req, res) => res.send('hello User'))
 
 app.use("/job", Job)
 

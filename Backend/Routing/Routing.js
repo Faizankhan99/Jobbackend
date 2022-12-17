@@ -1,5 +1,5 @@
 const express = require('express');
-const Job = require("../model/Job.model")
+const Job = require("../Model/Job.model")
 const app = express.Router()
 
 /// -----------------------Get all--------------------------------
