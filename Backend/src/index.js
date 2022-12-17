@@ -1,7 +1,7 @@
 const express = require('express')
 const { mongoose } = require('mongoose')
 const cors = require("cors")
-const Job=require("./Routing/Routing")
+const Job=require("../Routing/Routing")
 require("dotenv").config()
 const app = express()
 app.use(express.urlencoded({ extended: true }))
