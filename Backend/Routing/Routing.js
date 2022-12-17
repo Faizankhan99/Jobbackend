@@ -1,5 +1,5 @@
 const express = require('express');
-const Job = require("../Model/Job.model")
+const Job = require("../Model/job.model")
 const app = express.Router()
 
 // console.log(Job)
